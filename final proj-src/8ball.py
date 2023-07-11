@@ -45,6 +45,7 @@ cuesound = pygame.mixer.Sound(os.path.join(assets_path, 'cuesound.wav'))
 ballsounds = []
 for i in range(5):
     ballsound = pygame.mixer.Sound(os.path.join(assets_path, f'sound{i}.wav'))
+    ballsound.set_volume(0.2)
     ballsounds.append(ballsound)
 # font
 myFont = pygame.font.SysFont("arial", 30, True, False)
